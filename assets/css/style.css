@@ -10,6 +10,28 @@ body{
 
 }
 
+button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #1cc6f1;
+    color:#fff;
+    border:0;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#game{
+	border:1px solid #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	width:300px;
+	margin-left:40px;
+	padding:20px;
+	
+}
+
 #demo div p{
 	/*visibility:hidden;*/
 	color:#fff;
@@ -24,14 +46,16 @@ body{
 }
 
 .content h1{
-	font-size:30px;
+	font-family: 'Sigmar One', cursive !important;
+	font-size:55px;
 	color:#fff;
 	text-align:center;
 	font-family:sans-serif;
+	margin-top:50px;
+	text-shadow: 5px 5px #000;
+
+	
 }
-
-
-
 
 /*hero video css*/
 .homepage-hero-module {

@@ -48,27 +48,38 @@
 					sound: "sound.mp4",
 					image: "image.jpg"
 				},
+				{
+					word: "JULIET",
+					sound: "sound.mp4",
+					image: "image.jpg"
+				},
 			]
 
 			var chosenWord = [];
-			var emptyArray = []
+			var emptyArray = [];
+			var noMatch = 0;
+			var guessedRightNumb = 0;
+
 
 			function startGame(){
 
-				// clear old word
-				document.getElementById("demo").innerHTML = ' ';
+				// Set number of guesees
+				guessesRemaining = 10;
+				lettersGuessed = [];
+				emptyArray = [];
 
-				// Display remaining number of guesses
-				document.getElementById("game").innerHTML = guessesRemaining
+				// Display number of guesses at 10
+				document.getElementById("game").innerHTML = "<p>Remaining Guesses: " + guessesRemaining + "</p>";
 
 
 				// choose random word from array of words
-				var chosenWord = words[Math.floor(Math.random() * words.length)];
+				chosenWord = words[Math.floor(Math.random() * words.length)];
 				console.log(chosenWord.word);
 			
 				
-				// create empty array for the chosen word and display it
+				// create empty array for the chosen word and display it as hidden word
 				for (var j=0; j< chosenWord.word.length; j++){
+
 					emptyArray.push('_');
 					document.getElementById("demo").innerHTML = emptyArray;
 				}
@@ -81,7 +92,7 @@
       				var userGuess = event.key;
       				lettersGuessed.push(userGuess);
 
-      				
+      				var guessedRight = false;
 
       				// loop through each letter in chosen word to see if it matches the user guess
       				for (var i=0; i < chosenWord.word.length; i++){
@@ -89,32 +100,85 @@
       					// check if userGuess is same as letter in array
       					if(userGuess === chosenWord.word[i].toLowerCase()){
       						
-      						emptyArray.splice(chosenWord.word[i], 1, userGuess.toUpperCase());
+      						// sets guess right to true
+      						guessedRight = true;
+      						guessedRightNumb++
+
+      						// add matching letters to array
+      						emptyArray[i] = userGuess.toUpperCase();
 							document.getElementById("demo").innerHTML = emptyArray;
-      					} else{
 
       					}
 					}
 
+					// checks to see if guessright is still false, if so guess remaining -1
+					if (guessedRight === false){
+						guessesRemaining--;
+					}
 
-
-					if(guessesRemaining === "0"){
-						// end game
-					} 
-
-					// Creating a variable to hold our new HTML. Our HTML now keeps track of the user and computer guesses, and wins/losses/ties.
+					// update letters guessed, guesses remaining.
         			var html =
         			  "<p>You chose: " + lettersGuessed + "</p>" +
         			  "<p>Remaining Guesses: " + guessesRemaining + "</p>";
 			
         			// Set the inner HTML contents of the #game div to our html string
         			document.querySelector("#game").innerHTML = html;
+
+					
+					// Game Over
+					if(guessesRemaining <= "0"){
+						gameOver();
+						return;
+					} 
+
+					// Winning
+					if(guessedRightNumb === emptyArray.length){
+						winner();
+						return;
+					}
 				}
 			}
 
+			function gameOver() {
 
-			// For each chosenWord loop through and create another array emptyArray with dashes.
-			// when user selects letter in choseWord replace that index in emptyArray with the letter
+				lettersGuessed = [];
 
+				var htmlDemo =
+				"<p>Game Over Sucka" + "</p>"
+
+				// Set the inner HTML contents of the #game div to our html string
+        		document.querySelector("#demo").innerHTML = htmlDemo;
+
+        		var htmlGame =
+        		"<p>You chose: </p>" + "<p>Remaining Guesses: </p>";
 			
+        		// Set the inner HTML contents of the #game div to our html string
+        		document.querySelector("#game").innerHTML = htmlGame;
+
+        		// Play game over sound
+         		var audio = new Audio('assets/audio/gameover.wav');
+				audio.play();
+
+			}
+
+			function winner(){
+				// update letters guessed, guesses remaining.
+         		var htmlWinGame = '';
+				
+         		// Set the inner HTML contents of the #game div to our html string
+         		document.querySelector("#game").innerHTML = htmlWinGame;
+
+         		var htmlWin = "<p>Winna Winna Chicken Dinna!</p>";
+
+			 	// Set the inner HTML contents of the #game div to our html string
+         		document.querySelector("#demo").innerHTML = htmlWin;
+
+         		// reset number of correct guesses
+         		guessedRightNumb = 0;
+
+         		// Play winning sound
+         		var audio = new Audio('assets/audio/chicken.wav');
+				audio.play();
+         		
+			}
 
