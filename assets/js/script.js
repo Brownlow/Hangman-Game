@@ -64,6 +64,9 @@
 
 			function startGame(){
 
+				var chicken = document.getElementById("chickenHolder");
+				chicken.style.display = "none";
+
 				// Set number of guesees
 				guessesRemaining = 10;
 				lettersGuessed = [];
