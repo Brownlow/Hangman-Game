@@ -59,6 +59,7 @@
 			var emptyArray = [];
 			var noMatch = 0;
 			var guessedRightNumb = 0;
+			var wins = 0;
 
 
 			function startGame(){
@@ -69,7 +70,10 @@
 				emptyArray = [];
 
 				// Display number of guesses at 10
-				document.getElementById("game").innerHTML = "<p>Remaining Guesses: " + guessesRemaining + "</p>";
+				document.getElementById("game").innerHTML = 
+				"<p>Wins:" + wins + "</p>" +
+				"<p>You chose: " + lettersGuessed + "</p>" +
+        		"<p>Remaining Guesses: " + guessesRemaining + "</p>";
 
 
 				// choose random word from array of words
@@ -118,8 +122,9 @@
 
 					// update letters guessed, guesses remaining.
         			var html =
-        			  "<p>You chose: " + lettersGuessed + "</p>" +
-        			  "<p>Remaining Guesses: " + guessesRemaining + "</p>";
+        			"<p>Wins:" + wins + "</p>" +
+        			"<p>You chose: " + lettersGuessed + "</p>" +
+        			"<p>Remaining Guesses: " + guessesRemaining + "</p>";
 			
         			// Set the inner HTML contents of the #game div to our html string
         			document.querySelector("#game").innerHTML = html;
@@ -132,7 +137,7 @@
 					} 
 
 					// Winning
-					if(guessedRightNumb === emptyArray.length){
+					if(guessedRightNumb >= emptyArray.length){
 						winner();
 						return;
 					}
@@ -144,7 +149,7 @@
 				lettersGuessed = [];
 
 				var htmlDemo =
-				"<p>Game Over Sucka" + "</p>"
+				"<p>Game Over Sucka </p>"
 
 				// Set the inner HTML contents of the #game div to our html string
         		document.querySelector("#demo").innerHTML = htmlDemo;
@@ -162,16 +167,19 @@
 			}
 
 			function winner(){
+
+				wins++;
 				// update letters guessed, guesses remaining.
-         		var htmlWinGame = '';
+         		var htmlWinGame = "<p>Wins:" + wins + "</p>";
 				
          		// Set the inner HTML contents of the #game div to our html string
          		document.querySelector("#game").innerHTML = htmlWinGame;
 
-         		var htmlWin = "<p>Winna Winna Chicken Dinna!</p>";
+         		var htmlWin = "<p>Winner Winner Chicken Dinner!</p>";
 
 			 	// Set the inner HTML contents of the #game div to our html string
          		document.querySelector("#demo").innerHTML = htmlWin;
+         		
 
          		// reset number of correct guesses
          		guessedRightNumb = 0;
@@ -179,6 +187,7 @@
          		// Play winning sound
          		var audio = new Audio('assets/audio/chicken.wav');
 				audio.play();
-         		
+				
 			}
+
 
