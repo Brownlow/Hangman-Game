@@ -34,6 +34,537 @@ button{
 
 }
 
+#chickenHolder{
+	display: none;
+	
+	right: 0%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+@include keyframes(neck){
+	0% {
+		transform: matrix(1,0,0,1,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.9659271240234375,-0.2587890625,0.2587890625,0.9659271240234375,180.25,161.55);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.9659271240234375,-0.2587890625,0.2587890625,0.9659271240234375,180.25,161.55);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.9976043701171875,0.06884765625,-0.06884765625,0.9976043701171875,199.05,111.9);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.9814300537109375,-0.191680908203125,0.191680908203125,0.9814300537109375,184.5,102.4);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.9363861083984375,-0.350860595703125,0.350860595703125,0.9363861083984375,176.95,119.45);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.826812744140625,-0.5624542236328125,0.5624542236328125,0.826812744140625,189.3,177.2);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(1,0,0,1,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+	58.87850467289719% {
+		transform: matrix(1,0,0,1,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+	68.22429906542055% {
+		transform: matrix(0.96588134765625,0.258819580078125,-0.258819580078125,0.96588134765625,189.8,136.5);
+		@include animation-timing-function(linear);
+	}
+	79.43925233644859% {
+		transform: matrix(0.9808349609375,-0.1948394775390625,0.1948394775390625,0.9808349609375,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+	82.2429906542056% {
+		transform: matrix(0.9808349609375,-0.1948394775390625,0.1948394775390625,0.9808349609375,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+	86.91588785046729% {
+		transform: matrix(1,0,0,1,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(1,0,0,1,189.75,132.55);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(body){
+	0% {
+		transform: matrix(1,0,0,1,141.6,161.85);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.9936370849609375,0.1126251220703125,-0.1126251220703125,0.9936370849609375,129.1,183.4);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.9936370849609375,0.1126251220703125,-0.1126251220703125,0.9936370849609375,129.1,183.4);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.988922119140625,-0.1483612060546875,0.1483612060546875,0.988922119140625,155.65,145.65);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.9997711181640625,0.0203704833984375,-0.0203704833984375,0.9997711181640625,135.8,128.9);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.9880523681640625,0.153900146484375,-0.153900146484375,0.9880523681640625,125.3,139.9);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.86602783203125,0.499969482421875,-0.499969482421875,0.86602783203125,130.4,183.95);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(1,0,0,1,141.6,161.85);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(1,0,0,1,141.6,161.85);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(rightShin){
+	0% {
+		transform: matrix(0.9352874755859375,0.3538818359375,-0.3538818359375,0.9352874755859375,131.45,225.05);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.97088623046875,-0.2393951416015625,0.2393951416015625,0.97088623046875,111.85,237.7);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.97088623046875,-0.2393951416015625,0.2393951416015625,0.97088623046875,111.85,237.7);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.6927490234375,0.721099853515625,-0.721099853515625,0.6927490234375,147.25,201.85);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.970855712890625,-0.2393646240234375,0.2393646240234375,0.970855712890625,125.45,185.8);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.875823974609375,-0.4824676513671875,0.4824676513671875,0.875823974609375,112.9,196.8);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.97088623046875,-0.2393951416015625,0.2393951416015625,0.97088623046875,111.85,237.7);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(0.9352874755859375,0.3538818359375,-0.3538818359375,0.9352874755859375,131.45,225.05);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(0.9352874755859375,0.3538818359375,-0.3538818359375,0.9352874755859375,131.45,225.05);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(rightLeg){
+	0% {
+		transform: matrix(1,0,0,1,132.35,210.2);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.9659271240234375,0.2588043212890625,-0.2588043212890625,0.9659271240234375,112.35,230.2);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.9659271240234375,0.2588043212890625,-0.2588043212890625,0.9659271240234375,112.35,230.2);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.9999847412109375,0,0,0.9999847412109375,147.45,192.6);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.9999847412109375,0,0,0.9999847412109375,125.75,176.55);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.9999847412109375,0,0,0.9999847412109375,113.25,187.55);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.9659271240234375,0.2588043212890625,-0.2588043212890625,0.9659271240234375,112.35,230.2);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(1,0,0,1,132.35,210.2);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(1,0,0,1,132.35,210.2);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(rightFoot){
+	0% {
+		transform: matrix(1,0,0,1,144.5,262.6);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(1,0,0,1,144.5,262.6);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.86602783203125,0.4999847412109375,-0.4999847412109375,0.86602783203125,141.55,245.15);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.86602783203125,0.4999847412109375,-0.4999847412109375,0.86602783203125,158.9,212.55);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.9658966064453125,-0.2588043212890625,0.2588043212890625,0.9658966064453125,153.05,213.65);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(1,0,0,1,144.5,262.6);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(1,0,0,1,144.5,262.6);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(wing){
+	0% {
+		transform: matrix(1,0,0,1,158.6,138.5);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.645782470703125,0.76348876953125,-0.76348876953125,0.645782470703125,160.15,158.9);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.34613037109375,0.93817138671875,-0.93817138671875,0.34613037109375,160.05,158.85);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.9659271240234375,-0.2588043212890625,0.2588043212890625,0.9659271240234375,178.85,115.2);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.499969482421875,0.8660125732421875,-0.8660125732421875,0.499969482421875,157.8,106.7);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.499969482421875,0.8660125732421875,-0.8660125732421875,0.499969482421875,142.25,114.2);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(1,0,0,1,160.1,158.85);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(1,0,0,1,158.6,138.5);
+		@include animation-timing-function(linear);
+	}
+	58.87850467289719% {
+		transform: matrix(1,0,0,1,158.6,138.5);
+		@include animation-timing-function(linear);
+	}
+	61.6822429906542% {
+		transform: matrix(0.86602783203125,0.4999847412109375,-0.4999847412109375,0.86602783203125,160.1,141.5);
+		@include animation-timing-function(linear);
+	}
+	64.48598130841121% {
+		transform: matrix(0.9897003173828125,-0.143096923828125,0.143096923828125,0.9897003173828125,160.05,141.45);
+		@include animation-timing-function(linear);
+	}
+	67.28971962616822% {
+		transform: matrix(0.86602783203125,0.4999847412109375,-0.4999847412109375,0.86602783203125,160.1,141.5);
+		@include animation-timing-function(linear);
+	}
+	70.09345794392523% {
+		transform: matrix(0.9897003173828125,-0.143096923828125,0.143096923828125,0.9897003173828125,160.05,141.45);
+		@include animation-timing-function(linear);
+	}
+	72.89719626168224% {
+		transform: matrix(1,0,0,1,158.6,138.5);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(1,0,0,1,158.6,138.5);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(leftLeg){
+	0% {
+		transform: matrix(0.881988525390625,0,0,0.881988525390625,161.65,209.6);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.881988525390625,0,0,0.881988525390625,143.85,232);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.881988525390625,0,0,0.881988525390625,143.85,232);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.8519287109375,-0.2282562255859375,0.2282562255859375,0.8519287109375,169.15,195.35);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.763824462890625,-0.440948486328125,0.440948486328125,0.763824462890625,158.95,181.3);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.763824462890625,-0.440948486328125,0.440948486328125,0.763824462890625,154.45,185.8);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.881988525390625,0,0,0.881988525390625,143.85,232);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(0.881988525390625,0,0,0.881988525390625,161.65,209.6);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(0.881988525390625,0,0,0.881988525390625,161.65,209.6);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(leftFoot){
+	0% {
+		transform: matrix(0.8769683837890625,0,0,0.8769683837890625,174.85,252.8);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.8769683837890625,0,0,0.8769683837890625,174.85,252.8);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.7594757080078125,0.4384613037109375,-0.4384613037109375,0.7594757080078125,173.8,238.45);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.8470611572265625,-0.2269744873046875,0.2269744873046875,0.8470611572265625,195.35,198.8);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.8470611572265625,-0.2269744873046875,0.2269744873046875,0.8470611572265625,190.85,203.3);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.8769683837890625,0,0,0.8769683837890625,174.85,252.8);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(0.8769683837890625,0,0,0.8769683837890625,174.85,252.8);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(leftShin){
+	0% {
+		transform: matrix(0.74005126953125,0.1930389404296875,-0.1930389404296875,0.74005126953125,162.25,222.4);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.659820556640625,-0.386810302734375,0.386810302734375,0.659820556640625,144.25,240.85);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.659820556640625,-0.386810302734375,0.386810302734375,0.659820556640625,144.25,240.85);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.618011474609375,0.4505615234375,-0.4505615234375,0.618011474609375,172,204.6);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.59515380859375,-0.480316162109375,0.480316162109375,0.59515380859375,161.5,190.7);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.59515380859375,-0.480316162109375,0.480316162109375,0.59515380859375,157,195.2);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.659820556640625,-0.386810302734375,0.386810302734375,0.659820556640625,144.25,240.85);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(0.74005126953125,0.1930389404296875,-0.1930389404296875,0.74005126953125,162.25,222.4);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(0.74005126953125,0.1930389404296875,-0.1930389404296875,0.74005126953125,162.25,222.4);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(head){
+	0% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,199.7,60.5);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.920135498046875,0.24652099609375,-0.24652099609375,0.920135498046875,171.2,89.5);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.8249359130859375,-0.4763031005859375,0.4763031005859375,0.8249359130859375,171.5,85.55);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.673553466796875,-0.6735687255859375,0.6735687255859375,0.673553466796875,217.15,34.95);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.952545166015625,-0.0000152587890625,0.0000152587890625,0.952545166015625,180.75,29.85);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.9200897216796875,0.2465057373046875,-0.2465057373046875,0.9200897216796875,162.05,48.35);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.87701416015625,0.37176513671875,-0.37176513671875,0.87701416015625,159.25,111.55);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,199.7,60.5);
+		@include animation-timing-function(linear);
+	}
+	58.87850467289719% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,199.7,60.5);
+		@include animation-timing-function(linear);
+	}
+	68.22429906542055% {
+		transform: matrix(0.95184326171875,0.037567138671875,-0.037567138671875,0.95184326171875,220.7,66.55);
+		@include animation-timing-function(linear);
+	}
+	79.43925233644859% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,186.1,59.5);
+		@include animation-timing-function(linear);
+	}
+	82.2429906542056% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,186.1,59.5);
+		@include animation-timing-function(linear);
+	}
+	86.91588785046729% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,199.7,60.5);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(0.952606201171875,0,0,0.952606201171875,199.7,60.5);
+		@include animation-timing-function(linear);
+	}
+
+}
+@include keyframes(tail){
+	0% {
+		transform: matrix(1,0,0,1,89.1,161.5);
+		@include animation-timing-function(linear);
+	}
+	5.607476635514018% {
+		transform: matrix(0.9290771484375,0.369873046875,-0.369873046875,0.9290771484375,75.55,177.55);
+		@include animation-timing-function(linear);
+	}
+	11.214953271028037% {
+		transform: matrix(0.801666259765625,0.597686767578125,-0.597686767578125,0.801666259765625,72,171.1);
+		@include animation-timing-function(linear);
+	}
+	17.75700934579439% {
+		transform: matrix(0.703857421875,-0.7102813720703125,0.7102813720703125,0.703857421875,108.85,152.75);
+		@include animation-timing-function(linear);
+	}
+	26.168224299065418% {
+		transform: matrix(0.9646759033203125,-0.2631988525390625,0.2631988525390625,0.9646759033203125,89.35,129.65);
+		@include animation-timing-function(linear);
+	}
+	31.775700934579437% {
+		transform: matrix(0.9646759033203125,-0.2631988525390625,0.2631988525390625,0.9646759033203125,78.95,133.65);
+		@include animation-timing-function(linear);
+	}
+	39.25233644859813% {
+		transform: matrix(0.9290771484375,0.369873046875,-0.369873046875,0.9290771484375,88.1,160);
+		@include animation-timing-function(linear);
+	}
+	45.794392523364486% {
+		transform: matrix(1,0,0,1,89.1,161.5);
+		@include animation-timing-function(linear);
+	}
+	100% {
+		transform: matrix(1,0,0,1,89.1,161.5);
+		@include animation-timing-function(linear);
+	}
+
+}
+#rightFoot {
+	@include animation(rightFoot 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#leftFoot {
+	@include animation(leftFoot 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#body {
+	@include animation(body 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#rightShin {
+	@include animation(rightShin 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#rightLeg {
+	@include animation(rightLeg 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#leftLeg {
+	@include animation(leftLeg 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#leftShin {
+	@include animation(leftShin 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#tail {
+	@include animation(tail 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#neck {
+	@include animation(neck 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#wing {
+	@include animation(wing 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+#head {
+	@include animation(head 3.0571428571428565s infinite);
+	@include animation-delay(0s);
+}
+}
+
 #demo div p{
 	/*visibility:hidden;*/
 	color:#fff;

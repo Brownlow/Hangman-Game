@@ -179,7 +179,9 @@
 
 			 	// Set the inner HTML contents of the #game div to our html string
          		document.querySelector("#demo").innerHTML = htmlWin;
-         		
+
+         		var chicken = document.getElementById("chickenHolder");
+				chicken.style.display = "block";
 
          		// reset number of correct guesses
          		guessedRightNumb = 0;
